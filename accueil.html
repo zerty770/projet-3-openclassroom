@@ -3,9 +3,74 @@
     <head>
         <meta charset="utf-8" />
         <title>ohmyfood</title>
+        <link rel="stylesheet" href="scss/style.css"/>        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/795f1d9825.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
+        <div class="loader">
+            <span class="chargement" ></span>
+            <p>ohmyfood</p>
+        </div>
+
+        <header>
+            <img src="images/ohmyfood.png" alt="logo">
+        </header>
+
+        <div class="localisation">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Paris, Belleville</p>
+        </div>
+
+        <div class="explorer">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
+
+            <a href="#resto">Explorer nos restaurants</a>
+        </div>
+
+        <section class="fonctionnement">
+            <h2>Fonctionnement</h2>
+
+            <div class="choix">
+                <button class="choix--element">
+                    <span class="numero">1</span>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span> Choisissez un restaurant</span>
+                </button>
+
+                <button class="choix--element">
+                    <span class="numero">2</span>
+                    <i class="fa-solid fa-list-ul"></i>
+                    <span>Composez votre menu</span>
+                </button>
+
+                <button class="choix--element">
+                    <span class="numero">3</span>
+                    <i class="fa-solid fa-store"></i>
+                    <span>Déguster au restaurant</span>
+                </button>
+
+            </div>
+        </section>
+
+        <section class="restaurants" id="resto">
+
+            <h2>Restaurants</h2>
+
+            <div class="selection">
+                <div class="carte">
+                    <img src="images/gout.jpg" alt="la palette du gout">
+                    <span class="sticker">Nouveau</span>
+                </div>
+            </div>
+
+        </section>
+
     
     </body>
 </html>
