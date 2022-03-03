@@ -104,4 +104,52 @@ a {
   flex-direction: column;
   margin: 5%;
   padding-top: 30px;
+}
+.fonctionnement h2 {
+  font-weight: bolder;
+}
+.fonctionnement .choix {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.fonctionnement .choix--element {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #f3f3f3;
+  box-shadow: 0px 0px 18px #c7c7c7;
+}
+.fonctionnement .choix--element .numero {
+  background: #9356DC;
+  border-radius: 50px;
+  color: white;
+  font-weight: lighter;
+  font-size: 16px;
+  padding: 6px 10px 6px 10px;
+  margin-left: -5.5%;
+  margin-right: 5%;
+}
+.fonctionnement .choix--element .icone {
+  font-size: 20px;
+  color: #857d7d;
+  margin-right: 7%;
+}
+.fonctionnement .choix--element .text {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  padding-left: 5%;
+  padding-top: 60px;
+  background: #f3f3f3;
 }/*# sourceMappingURL=style.css.map */
