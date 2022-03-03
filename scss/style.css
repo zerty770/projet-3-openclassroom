@@ -1,9 +1,8 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   text-decoration: none;
+  margin: 0;
   font-family: "roboto";
 }
 
@@ -29,7 +28,7 @@ a {
   border-radius: 100%;
 }
 .loader p {
-  font-family: shrikhand;
+  font-family: "shrikhand";
   font-size: 150px;
   margin-left: 30px;
 }
@@ -43,6 +42,7 @@ a {
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 20px;
+  background-color: #f3f3f3;
   box-shadow: 0 0 14px;
 }
 .logo .icone {
@@ -55,6 +55,7 @@ a {
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: rgba(221, 221, 221, 0.658);
 }
 .localisation p {
   padding-left: 20px;
@@ -65,4 +66,42 @@ a {
   font-size: 20px;
 }
 
-/*explorer*//*# sourceMappingURL=style.css.map */
+/*explorer*/
+.explorer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: #f3f3f3;
+  white-space: none;
+}
+.explorer h1 {
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: bolder;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.explorer p {
+  font-size: 18px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.explorer .boutton {
+  border: none;
+  font-size: 18px;
+  padding: 15px 25px 15px 25px;
+  color: white;
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  padding-top: 30px;
+}/*# sourceMappingURL=style.css.map */

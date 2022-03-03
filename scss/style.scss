@@ -1,8 +1,7 @@
 *{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
     text-decoration: none;
+    margin: 0;
     font-family: 'roboto';
 }
 
@@ -14,9 +13,16 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $third-color:#99E2D0;
 
+$background-1:rgba(221, 221, 221, 0.658);
+$background-2:rgb(243, 243, 243);
+
+@mixin bouton {
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient($secondary-color, $primary-color);
+}
 
 /* debut loader*/
-
 
 .loader{
     display: none ;
@@ -37,11 +43,12 @@ $third-color:#99E2D0;
     }
 
     p{
-        font-family: shrikhand;
+        font-family: 'shrikhand';
         font-size: 150px;
         margin-left: 30px;
     }
 }
+
 /*fin loader*/
 
 /*accueil*/
@@ -53,6 +60,7 @@ $third-color:#99E2D0;
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 20px;
+    background-color: $background-2;
     box-shadow: 0 0 14px;
 
     .icone{
@@ -65,6 +73,7 @@ $third-color:#99E2D0;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: $background-1;
 
     p{
         padding-left: 20px;
@@ -79,6 +88,45 @@ $third-color:#99E2D0;
 
 /*explorer*/
 
+.explorer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;    
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: $background-2;
+    white-space: none;
 
+    h1{
+        padding-bottom: 20px;
+        font-size: 25px;
+        font-weight: bolder;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    p{
+        font-size: 18px;
+        padding-bottom: 30px;
+        padding-left: 30px ;
+        padding-right: 30px;
+    }
+
+    .boutton{
+        border: none;
+        font-size: 18px;
+        padding: 15px 25px 15px 25px;
+        @include bouton()
+    }
+}
+
+.fonctionnement{
+    display: flex;
+    flex-direction:column ;
+    margin: 5%;
+    padding-top: 30px;
+
+}
 
 
