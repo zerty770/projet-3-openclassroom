@@ -174,6 +174,7 @@ $background-2:rgb(243, 243, 243);
     }
 }
 
+/*restaurants*/
 .restaurants{
 
     display: flex;
@@ -200,10 +201,11 @@ $background-2:rgb(243, 243, 243);
             background: #fff;
             border-radius: 25px;
             position: relative;
-            
+
             &--image{
                 width: 100%;
                 height: 13rem;
+                padding: 1px;
                 object-fit: cover;
                 border-radius: 25px 25px 0 0;
             }
@@ -229,3 +231,33 @@ $background-2:rgb(243, 243, 243);
 }
 
 
+/*footer*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    padding-left: 5%;
+    background: black;
+
+    a{
+        color: white;
+    }
+
+    &-logo{
+        font-family: 'shrikhand';
+        color: white;
+        font-weight: 300;
+        font-size: 22px;
+    }
+
+    &-lien{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+}
