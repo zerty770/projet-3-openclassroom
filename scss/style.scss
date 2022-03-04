@@ -22,6 +22,10 @@ $background-2:rgb(243, 243, 243);
     background: linear-gradient($secondary-color, $primary-color);
 }
 
+@mixin box-shadow {
+    box-shadow: 0px 0px 18px rgb(199, 199, 199);
+}
+
 /* debut loader*/
 
 .loader{
@@ -51,7 +55,8 @@ $background-2:rgb(243, 243, 243);
 
 /*fin loader*/
 
-/*accueil*/
+
+/* page accueil*/
 
 /*en tête*/
 .logo{
@@ -108,7 +113,7 @@ $background-2:rgb(243, 243, 243);
 
     p{
         font-size: 18px;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         padding-left: 30px ;
         padding-right: 30px;
     }
@@ -145,7 +150,7 @@ $background-2:rgb(243, 243, 243);
             padding-top: 30px;
             padding-bottom: 30px;
             background: $background-2;
-            box-shadow: 0px 0px 18px rgb(199, 199, 199);
+            @include box-shadow();
 
 
             .numero{
@@ -180,8 +185,10 @@ $background-2:rgb(243, 243, 243);
     display: flex;
     flex-direction: column;
     margin-top: 80px;
+    padding-bottom: 15%;
     padding-left: 5%;
     padding-top: 60px;
+
     background: $background-2;
 
     h2{
@@ -201,6 +208,8 @@ $background-2:rgb(243, 243, 243);
             background: #fff;
             border-radius: 25px;
             position: relative;
+            @include box-shadow();
+
 
             &--image{
                 width: 100%;
@@ -224,11 +233,25 @@ $background-2:rgb(243, 243, 243);
 
             &--pied{
                 display: flex; 
+                justify-content: space-between;
+                align-items: center;
 
+            }
+
+            &--text{
+                padding: 3%;
+            }
+
+            .coeurs{
+                padding-bottom: 2%;
+                padding-right: 6%;
+                font-size: 25px;
             }
         }
     }
 }
+
+/*pages menu*/
 
 
 /*footer*/
@@ -237,9 +260,9 @@ $background-2:rgb(243, 243, 243);
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-    padding-bottom: 35px;
+    padding-bottom: 45px;
     padding-left: 5%;
-    background: black;
+    background: rgb(32, 32, 32);
 
     a{
         color: white;
@@ -254,9 +277,23 @@ $background-2:rgb(243, 243, 243);
 
     &-lien{
         display: flex;
-        flex-direction: column;
+        flex-direction: column ;
+        padding-top: 15px;
+
+    }
+    .lien{
+        display: flex;
+        margin-top: 2%;
+        font-weight: normal;
+        p{
+            padding-left: 10px;
+        }
+
     }
 
+    .handshake{
+        font-size: 11px;
+    }
 
 
 
