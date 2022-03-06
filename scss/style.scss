@@ -305,6 +305,10 @@ $background-2:rgb(243, 243, 243);
         width: 50px;
     }
 
+    h3{
+        font-weight: 300;
+    }
+
     .categorie{
         display: flex;
         flex-direction: column;
@@ -312,11 +316,41 @@ $background-2:rgb(243, 243, 243);
         .element{
             display: flex;
             width: 95%;
-            padding-top: 10px;
-            padding-bottom:10px ;
+            height: 80px;
             margin-top: 15px ;
             background-color: #fff;
-            @include box-shadow()
+            border-radius: 20px;
+            @include box-shadow();
+            align-items: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &--text{
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                white-space: nowrap;
+                padding-left: 3%;
+
+            }
+
+            &--prix{
+                display: flex;
+                width: 20%;
+                justify-content: center;
+            }
+
+            &--check{
+                display: flex;   
+                width: 20%;
+                height: 100%;
+                font-size: 25px;
+                align-items: center;
+                justify-content: center;
+                border-radius:0 20px 20px 0  ;
+                background: $third-color;
+                color: white;
+            }
         }
     }
 }
