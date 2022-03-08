@@ -393,9 +393,9 @@ a {
   display: flex;
   flex-direction: column;
   width: 70%;
-  white-space: nowrap;
   padding-left: 3%;
   padding-right: 0;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -567,7 +567,7 @@ a {
 
   /*restaurants*/
   .brochure {
-    display: flex;
+    flex-direction: row;
   }
 
   .menu {
