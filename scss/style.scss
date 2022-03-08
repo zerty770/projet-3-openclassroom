@@ -356,6 +356,10 @@ $background-2:rgb(243, 243, 243);
     border-radius: 35px 35px 0 0;
 }
 
+.brochure{
+    display: flex;
+    flex-direction: column;
+}
 .nom-restaurant{
     display: flex;
     align-items: center;
@@ -363,10 +367,6 @@ $background-2:rgb(243, 243, 243);
     padding-top: 50px;
     padding-left: 5%;
     padding-right: 8%;
-
-    
-
-
 
     h1{
         font-family: 'shrikhand';
@@ -589,45 +589,8 @@ $background-2:rgb(243, 243, 243);
         display: flex;
         flex-direction: column;
         margin-top: 30px;
-
-        &--element{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            border: none;
-            border-radius: 25px;
-            margin-top: 15px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            background: $background-2;
-            @include box-shadow();
-
-
-            .numero{
-                position:relative;
-                background: $primary-color;
-                border-radius: 50px;
-                color: white;
-                font-weight: lighter;
-                font-size: 16px;
-                padding: 6px 10px 6px 10px;
-                left: -20px;
-            }
-
-            .icone{
-                font-size: 20px;
-                color: rgb(133, 125, 125);
-                margin-right: 5%;
-                padding-left: 3%;
-            }
-
-            .text{
-                font-size: 18px;
-                font-weight: bolder;
-            }
-
         }
-    }
+    
 }
 
 .fonctionnement{
@@ -665,7 +628,7 @@ $background-2:rgb(243, 243, 243);
         }
     }
 }
-}
+
 
 /*pages menu*/
 
@@ -688,3 +651,4 @@ $background-2:rgb(243, 243, 243);
     padding-left: 1%;
 }
 
+}
