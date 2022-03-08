@@ -158,7 +158,7 @@ $background-2:rgb(243, 243, 243);
     padding-top: 40px;
     padding-bottom: 80px;
     background-color: $background-2;
-    white-space: none;
+    white-space:unset;
 
     h1{
         padding-bottom: 20px;
@@ -446,6 +446,8 @@ $background-2:rgb(243, 243, 243);
                 border-radius:0 20px 20px 0  ;
                 background: $third-color;             
                 position: relative;
+                transition: all 3s linear 0s;
+
 
 
                 &::before{
@@ -471,6 +473,8 @@ $background-2:rgb(243, 243, 243);
                 .element--check{
                     display: flex;
                     width: 20%;
+
+
 
 
                 }
@@ -634,7 +638,6 @@ $background-2:rgb(243, 243, 243);
         &--element{
             width: 31.5%;
             margin: 2%;
-            padding-left: -150px;
             
             .icone{
                 padding: 0;

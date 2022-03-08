@@ -159,7 +159,7 @@ a {
   padding-top: 40px;
   padding-bottom: 80px;
   background-color: #f3f3f3;
-  white-space: none;
+  white-space: unset;
 }
 .explorer h1 {
   padding-bottom: 20px;
@@ -411,6 +411,7 @@ a {
   border-radius: 0 20px 20px 0;
   background: #99E2D0;
   position: relative;
+  transition: all 3s linear 0s;
 }
 .menu .categorie .element--check::before {
   color: white;
@@ -562,7 +563,6 @@ a {
   .fonctionnement .choix--element {
     width: 31.5%;
     margin: 2%;
-    padding-left: -150px;
   }
   .fonctionnement .choix--element .icone {
     padding: 0;
