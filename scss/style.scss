@@ -376,6 +376,12 @@ $background-2:rgb(243, 243, 243);
 
     .coeurs{
         font-size: 25px;
+
+        &:hover{
+            font-weight: bold;
+            transition: all 1.3s linear 0s;
+            color: $primary-color;    
+        }
     }
 }
 
