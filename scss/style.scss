@@ -52,6 +52,10 @@ $background-2:rgb(243, 243, 243);
     0% { opacity: 0;}
     100%{ opacity: 1;}
 }
+@keyframes recette{
+    0% { left: 20%; }
+    100%{ left:  0;}
+}
 /* debut loader*/
 
 .loader{
@@ -461,15 +465,13 @@ $background-2:rgb(243, 243, 243);
                 border-radius:0 20px 20px 0  ;
                 background: $third-color;             
                 position: relative;
-                transition: all 3s linear 0s;
 
 
 
                 &::before{
                     color: white;
-                    animation: spin 0.8s ease-out 1;
+                    animation: spin 1.5s  1;
                 }
-
 
             }
 
@@ -488,10 +490,7 @@ $background-2:rgb(243, 243, 243);
                 .element--check{
                     display: flex;
                     width: 20%;
-
-
-
-
+                    animation: recette 1s ;
                 }
             }
             
