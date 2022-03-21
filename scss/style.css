@@ -324,7 +324,7 @@ a {
 }
 .restaurants .selection .carte .coeurs:hover {
   font-weight: bold;
-  transition: all 1.3s linear 0s;
+  transition: all 1s linear 0s;
   color: #9356DC;
 }
 .restaurants .selection .carte:hover {
@@ -372,7 +372,7 @@ a {
 }
 .nom-restaurant .coeurs:hover {
   font-weight: bold;
-  transition: all 1.3s linear 0s;
+  transition: all 1s linear 0s;
   color: #9356DC;
 }
 
@@ -509,7 +509,7 @@ a {
   padding-top: 20px;
   padding-bottom: 45px;
   padding-left: 5%;
-  background: #202020;
+  background: #383838;
 }
 .footer a {
   color: white;
