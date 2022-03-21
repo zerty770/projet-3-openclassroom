@@ -208,7 +208,7 @@ a {
 }
 .explorer .boutton:hover {
   background: linear-gradient(#9356DC, #FF79DA);
-  box-shadow: 0px 0px 18px #a3a3a3;
+  box-shadow: 0px 0px 18px #928f8f;
 }
 
 .fonctionnement {
@@ -258,7 +258,7 @@ a {
   font-weight: bolder;
 }
 .fonctionnement .choix--element:hover {
-  box-shadow: 0px 0px 18px #a3a3a3;
+  box-shadow: 0px 0px 18px #928f8f;
 }
 .fonctionnement .choix--element:hover .icone {
   color: #9356DC;
@@ -330,7 +330,7 @@ a {
   color: #9356DC;
 }
 .restaurants .selection .carte:hover {
-  box-shadow: 0px 0px 18px #a3a3a3;
+  box-shadow: 0px 0px 18px #928f8f;
 }
 
 /*pages menu*/
@@ -454,7 +454,7 @@ a {
           animation: spin 1.5s 1;
 }
 .menu .categorie .element:hover {
-  box-shadow: 0px 0px 18px #a3a3a3;
+  box-shadow: 0px 0px 18px #928f8f;
 }
 .menu .categorie .element:hover .element--text {
   width: 60%;
@@ -503,7 +503,7 @@ a {
 }
 .commander-boutton:hover {
   background: linear-gradient(#9356DC, #FF79DA);
-  box-shadow: 0px 0px 18px #a3a3a3;
+  box-shadow: 0px 0px 18px #928f8f;
 }
 
 /*footer*/
@@ -543,10 +543,6 @@ a {
 
 @media screen and (min-width: 600px) {
   /* accueil*/
-  .loader p {
-    display: flex;
-  }
-
   /*fonctionnement*/
   .fonctionnement {
     display: flex;
@@ -607,5 +603,11 @@ a {
     width: 33%;
     padding-top: 5%;
     padding-left: 1%;
+  }
+}
+@media screen and (min-width: 730px) {
+  /*loader*/
+  .loader p {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
