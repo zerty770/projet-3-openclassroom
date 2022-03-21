@@ -23,7 +23,10 @@ $background-2:rgb(243, 243, 243);
 } 
 
 @mixin bouton-hover {
-    background: linear-gradient( $primary-color,$secondary-color);
+    background: linear-gradient( 
+        lighten( $primary-color,5%),
+        lighten($secondary-color,5%)
+        );
 }
 
 @mixin box-shadow {
