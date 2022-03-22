@@ -347,7 +347,7 @@ $background-2:rgb(243, 243, 243);
                 .coeurs--pleins{
                     color: $primary-color;
                     position: absolute;
-                    bottom: 4px;
+                    bottom: 3px;
                     transform: scale(0);
                     transform-origin: bottom;
                 }
@@ -426,7 +426,7 @@ $background-2:rgb(243, 243, 243);
         .coeurs--pleins{
             color: $primary-color;
             position: absolute;
-            bottom: 3px;
+            bottom: 0;
             transform: scale(0);
             transform-origin: bottom;
         }
