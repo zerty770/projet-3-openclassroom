@@ -486,12 +486,9 @@ a {
 .menu .categorie .element--text:hover {
   width: 60%;
 }
-.menu .categorie .element .boite2 {
-  width: 40%;
-}
 .menu .categorie .element--prix {
   display: flex;
-  width: 50%;
+  width: 30%;
   justify-content: center;
 }
 .menu .categorie .element--check {

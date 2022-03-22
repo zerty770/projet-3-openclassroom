@@ -430,7 +430,7 @@ $background-2:rgb(243, 243, 243);
             transform: scale(0);
             transform-origin: bottom;
         }
-        
+
         &:hover{
             .coeurs{
                 color: $primary-color;
@@ -504,12 +504,10 @@ $background-2:rgb(243, 243, 243);
                     width: 60%;
                 }
             }
-            .boite2{
-                width: 40%;
-            }
+
             &--prix{
                 display: flex;
-                width: 50%;
+                width: 30%;
                 justify-content: center;
 
             }
