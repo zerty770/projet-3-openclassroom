@@ -322,12 +322,19 @@ a {
 .restaurants .selection .carte .coeurs {
   padding-bottom: 2%;
   padding-right: 6%;
+  position: relative;
   font-size: 25px;
 }
 .restaurants .selection .carte .coeurs:hover {
-  font-weight: bold;
-  transition: all 1s linear 0s;
   color: #9356DC;
+}
+.restaurants .selection .carte .coeurs--pleins {
+  position: absolute;
+  right: 0;
+  transform: scaleX(0.01);
+}
+.restaurants .selection .carte .coeurs--pleins:hover {
+  transform: scaleX(1);
 }
 .restaurants .selection .carte:hover {
   box-shadow: 0px 0px 18px #928f8f;

@@ -329,14 +329,23 @@ $background-2:rgb(243, 243, 243);
             .coeurs{
                 padding-bottom: 2%;
                 padding-right: 6%;
+                position: relative;
                 font-size: 25px;
 
                 &:hover{
-                    font-weight: bold;
-                    transition: all 1s linear 0s;
                     color: $primary-color;                
                 }
                 
+            }
+
+            .coeurs--pleins{
+                position: absolute;
+                right: 0;
+                transform: scaleX(0.01);
+
+                &:hover{
+                    transform: scaleX(1);
+                }
             }
 
             &:hover{
