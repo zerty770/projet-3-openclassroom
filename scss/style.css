@@ -419,7 +419,7 @@ a {
 .nom-restaurant .boite .coeurs--pleins {
   color: #9356DC;
   position: absolute;
-  bottom: 4px;
+  bottom: 3px;
   transform: scale(0);
   transform-origin: bottom;
 }
