@@ -58,6 +58,11 @@ $background-2:rgb(243, 243, 243);
     0% { left: 20%; }
     100%{ left:  0;}
 }
+
+@keyframes remplissage {
+    0% { transform:scale(0);}
+    100% {transform: scale(1);}
+}
 /* debut loader*/
 
 .loader{
@@ -325,31 +330,43 @@ $background-2:rgb(243, 243, 243);
             &--text{
                 padding: 3%;
             }
-
-            .coeurs{
-                padding-bottom: 2%;
-                padding-right: 6%;
+            .boite{
+                overflow: hidden;
                 position: relative;
-                font-size: 25px;
+                padding-right: 12%;
+                height: 30px;
+                width: 30px;
+
+                .coeurs{
+                    padding-bottom: 2%;
+                    padding-right: 6%;
+                    position: absolute;
+                    font-size: 25px;         
+                }
+    
+                .coeurs--pleins{
+                    color: $primary-color;
+                    position: absolute;
+                    bottom: 4px;
+                    transform: scale(0);
+                    transform-origin: bottom;
+                }
 
                 &:hover{
-                    color: $primary-color;                
-                }
-                
-            }
-
-            .coeurs--pleins{
-                position: absolute;
-                right: 0;
-                transform: scaleX(0.01);
-
-                &:hover{
-                    transform: scaleX(1);
+                    .coeurs{
+                        color: $primary-color;
+                    }
+                    .coeurs--pleins{
+                    animation: remplissage 1.5s ;
+                    transform: scale(1);
+                    }
                 }
             }
+
 
             &:hover{
                 @include box-shadow-darken();
+
             }
         }
     }
@@ -392,16 +409,42 @@ $background-2:rgb(243, 243, 243);
         font-weight: 400;
     }
 
-    .coeurs{
-        font-size: 25px;
+    .boite{
+        overflow: hidden;
+        position: relative;
+        padding-right: 12%;
+        height: 30px;
+        width: 30px;
 
+        .coeurs{
+            padding-bottom: 2%;
+            padding-right: 6%;
+            position: absolute;
+            font-size: 25px;         
+        }
+
+        .coeurs--pleins{
+            color: $primary-color;
+            position: absolute;
+            bottom: 4px;
+            transform: scale(0);
+            transform-origin: bottom;
+        }
+        
         &:hover{
-            font-weight: bold;
-            transition: all 1s linear 0s;
-            color: $primary-color;    
+            .coeurs{
+                color: $primary-color;
+            }
+            .coeurs--pleins{
+            animation: remplissage 1.5s ;
+            transform: scale(1);
+            }
         }
     }
+
 }
+
+
 
 .menu{
     width: 100%;
@@ -461,10 +504,12 @@ $background-2:rgb(243, 243, 243);
                     width: 60%;
                 }
             }
-
+            .boite2{
+                width: 40%;
+            }
             &--prix{
                 display: flex;
-                width: 30%;
+                width: 50%;
                 justify-content: center;
 
             }
